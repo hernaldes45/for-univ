@@ -1,22 +1,14 @@
-// add comment
-#include <iostream>
-
+//равнобедренный треугольник из звездочек
+#include<iostream>
 using namespace std;
-
-int main(){
-int i,j,n;
- for(i=1; i<=7 ; i++){
-    for(j=1 ; j<=2*n-1;j++)
-    {
-        if(j >=n-(i-1) && j<=n+(i-1)){
-            cout<<"*";
-        }
-        else{
-            cout<<"";
-        }
+int main() {
+  for (int i = 1; i <= 7; i++) {
+    for (int k = 7 - i; k > 0; k--) {
+      cout << " ";
     }
-}
-         cout<<"\n";
-    
-    return 0;
+    for (int j = 1; j <= i; j++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
 }
