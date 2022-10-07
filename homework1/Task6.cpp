@@ -1,12 +1,16 @@
-// h=height(высота), w=width(ширина) , тоже 5 строки и как в задаче
+// h=height(высота ромба), w=width(ширина ромба)
+// чтобы получить нормальный ромб h должно быть равным w 
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main()
-{
-    int w=5;
-    int h=5;
+{ 
+    int w,h;
+    cout<<"Enter a number :";
+    cout<<"Enter a number: ";
+    cin>>h;
+    cin>>w;
     string fill("*");
     string empty(" ");
     for (int i = 0; i<w; i++)

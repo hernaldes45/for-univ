@@ -1,9 +1,11 @@
-// строка с одной звездочкой, строку с двумя звездочками, с тремя и т.д.(до 7-и я сделал)
+// строка с одной звездочкой, строку с двумя звездочками, с тремя и т.д.
 #include <iostream>
 using namespace std;
 int main (){
-    int i,j;
-    for (int i = 1 ; i<=7 ; i++)
+    cout << "Enter a number:  ";
+    int n, i,j;
+    cin >> n ;
+    for (int i = 1 ; i<=n ; i++)
     {
         for(int j=1 ; j<=i; j++){
             cout<<"*";

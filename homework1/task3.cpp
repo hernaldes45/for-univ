@@ -1,13 +1,14 @@
-//ромб из зведочек (7 строки и как в задаче )
+//ромб из зведочек 
 #include <iostream>
 using namespace std;
 int main() {
-  
-  int k = 1;
+  int n , k=1;
+ cout<<"Enter a number:";
+ cin>>n ;
 
-  k = 4- 1;
+  k = n- 1;
   
-  for (int i = 1; i <= 4; i++) {
+  for (int i = 1; i <= n; i++) {
     for (int j = 1; j <= k; j++)
     cout << " " ;
     k--;
@@ -18,12 +19,12 @@ int main() {
   }
 
   k = 1;
-  for (int i = 1; i <= 4-1; i++) {
+  for (int i = 1; i <= n-1; i++) {
     for (int j = 1; j <= k; j++)
     cout << " ";
     k++;
     
-    for (int j = 1; j <= 2*(4-i)-1; j++)
+    for (int j = 1; j <= 2*(n-i)-1; j++)
     cout << "*";
     cout << endl;
   }

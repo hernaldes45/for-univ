@@ -1,14 +1,15 @@
-//равнобедренный треугольник из звездочек (4 строки и как в задаче)
+//равнобедренный треугольник из звездочек
 #include <iostream>
 using namespace std;
 
 int main() {
-  
-  int k = 1;
+    int n, k = 1;
 
-  k = 4- 1;
+    cout << "Enter a number: ";
+cin >> n;
+  k = n- 1;
   
-  for (int i = 1; i <= 4; i++) {
+  for (int i = 1; i <=n; i++) {
     for (int j = 1; j <= k; j++)
     cout << " " ;
     k--;
